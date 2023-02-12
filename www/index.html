@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="dest/index.css" />
+  </head>
+  <body>
+    <script src="dest/index.js"></script>
+    <script>
+      if (!window.IsProduction) {
+        new EventSource("/esbuild").addEventListener("change", () =>
+          location.reload()
+        );
+      }
+    </script>
+  </body>
+</html>
