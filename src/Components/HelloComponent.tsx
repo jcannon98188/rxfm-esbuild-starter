@@ -1,12 +1,14 @@
-import RxFM from "rxfm";
+import RxFM, { type FC } from 'rxfm'
 
 interface HelloComponentProps {
-  name: string;
+  name: string
 }
 
-const HelloComponent = ({ name }: HelloComponentProps) => {
-  return <div class=" text-2xl text-red-700">Hello {name}</div>;
-};
+const HelloComponent: FC<HelloComponentProps> = ({
+  name
+}: HelloComponentProps) => {
+  return <div class="text-2xl text-red-700 ">Hello {name}</div>
+}
 
-export default HelloComponent;
-export { HelloComponent };
+export default HelloComponent
+export { HelloComponent }
