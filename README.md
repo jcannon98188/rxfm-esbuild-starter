@@ -37,6 +37,8 @@ Or use the tests only once:
 npm run test:ci
 ```
 
+## Linting
+
 This template is configured to use both Prettier and ESLint. The repository has been configured with pre-commit hooks to enforce coding standards. 
 
 ---
