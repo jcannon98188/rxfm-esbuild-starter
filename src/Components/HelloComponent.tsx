@@ -5,7 +5,7 @@ interface HelloComponentProps {
 }
 
 const HelloComponent = ({ name }: HelloComponentProps) => {
-  return <div class="text-2xl text-red-700">Hello {name}</div>;
+  return <div class=" text-2xl text-red-700">Hello {name}</div>;
 };
 
 export default HelloComponent;
